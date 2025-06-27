@@ -1,9 +1,9 @@
 :root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
+    --cor-fundo:  #9d9d60 ;
+    --cor-principal: #c0c080 ;
+    --cor-secundaria: #420019; 
+    --cor-destaque: #5f0528;
+    --cor-texto: #f1fdff;
 
 }
 
@@ -18,6 +18,8 @@ body {
 
 .caixa-principal{
     background-color: var(--cor-principal);
+
+    border-radius: 25px;
     width: 90%;
     max-width: 600px;
     text-align: center;
