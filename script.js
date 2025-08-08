@@ -1,4 +1,4 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
+const caixaPrincipal = document.querySelector(".caixa-principal"); 
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Há 3,5 bilhões a vida surgia em forma unicelular. Evolua elas até onde puder.",
+        enunciado: "Você é uma criatura primitiva no início da evolução. Você precisa escolher seu ambiente para sobreviver. Onde você vai viver?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "No início ficou com medo do que essa tecnologia pode fazer. "
+                texto: "Escolho viver na água, onde posso me esconder e evoluir para nadar.",
+                afirmacao: "Você evolui nadadeiras e respiração aquática, se adaptando ao ambiente aquático."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia."
+                texto: "Escolho sair para a terra, onde a exploração de novos recursos é possível.",
+                afirmacao: "Você desenvolve pulmões e membros para caminhar, iniciando sua adaptação à terra firme."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Com o tempo, você percebe que precisa se proteger de predadores. O que você escolhe para sua defesa?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis."
+                texto: "Decido criar uma carapaça dura, para me proteger de ataques.",
+                afirmacao: "Sua evolução favoreceu o desenvolvimento de uma armadura natural, protegendo-o de predadores."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho."
+                texto: "Escolho criar chifres para atacar e defender-me melhor.",
+                afirmacao: "Você agora possui chifres poderosos que ajudam a se defender e a competir com outros por território."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "A necessidade de se alimentar está cada vez mais presente. Como você vai caçar ou coletar comida?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA."
+                texto: "Desenvolvo habilidades para caçar peixes, aproveitando minha vida aquática.",
+                afirmacao: "Você aperfeiçoa suas habilidades de caça subaquática, tornando-se um predador formidável no oceano."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
+                texto: "Decido desenvolver habilidades para buscar comida na terra, como raízes e frutos.",
+                afirmacao: "Você começa a explorar a terra em busca de alimento, aprendendo a identificar fontes de comida e recursos naturais."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "O ambiente está mudando. Agora é necessário tomar uma decisão importante. O que você faz?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
+                texto: "Decido migrar para um novo habitat, em busca de melhores condições.",
+                afirmacao: "Sua migração o levou a um novo ambiente, onde novas oportunidades de adaptação surgem."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!"
+                texto: "Fico no meu habitat atual, tentando me adaptar às novas condições de vida.",
+                afirmacao: "Você se adapta gradualmente às novas condições, desenvolvendo novas habilidades para sobreviver."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Sua espécie agora está em um ponto crucial de evolução. O que você faz para garantir a sobrevivência futura?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Decido evoluir para uma forma mais inteligente, com maior capacidade de comunicação e uso de ferramentas.",
+                afirmacao: "Você começa a desenvolver habilidades cognitivas avançadas, usando ferramentas para melhorar a sua sobrevivência."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                texto: "Decido focar na adaptação física, tornando-me ainda mais forte e rápido.",
+                afirmacao: "Sua espécie se torna fisicamente mais dominante, com grande força e velocidade para caçar e sobreviver."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Sua jornada evolutiva chegou ao fim. O que você se tornou?";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
